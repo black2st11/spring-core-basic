@@ -1,8 +1,14 @@
 package helllo.core.discount;
 
+import helllo.core.annotation.MainDiscountPolicy;
 import helllo.core.member.Grade;
 import helllo.core.member.Member;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
+@Component
+@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy{
     private int discountPercent = 10;
     @Override
