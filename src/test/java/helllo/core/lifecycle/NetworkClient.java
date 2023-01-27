@@ -1,10 +1,10 @@
 package helllo.core.lifecycle;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 // InitializingBean, DisposableBean 초기화 소멸 인터페이스
 public class NetworkClient {
